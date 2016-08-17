@@ -1,0 +1,1 @@
+ALTER TABLE name_table1 ADD subject varchar(67) CHARACTER SET UTF8 COLLATE UTF8_GENERAL_CI AFTER message; // добавили колонку сабджект после колонки меседж
