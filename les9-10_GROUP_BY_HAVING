@@ -1,0 +1,3 @@
+SELECT * FROM name_table1
+GROUP BY title, message HAVING price > 20
+// группируем по тайтл и меседж где цена больше 20 
