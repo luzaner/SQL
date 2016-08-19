@@ -1,0 +1,10 @@
+SELECT COUNT(DISTINCT price) AS count_price FROM name_table1; 
+// показать коичество уникальныз цен как каунт_прайс
+SELECT AVG( price) AS count_price FROM name_table1;
+// средняя цена 
+SELECT SUM( price) AS count_price FROM name_table1;
+//  сумма
+SELECT MAX( price) AS count_price FROM name_table1;
+// MAXIMAL
+SELECT MIN( price) AS count_price FROM name_table1;
+// MINIMAL
