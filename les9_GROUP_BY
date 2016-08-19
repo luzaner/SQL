@@ -1,0 +1,3 @@
+SELECT * FROM name_table1
+GROUP BY title, message 
+// группируем по тайтл и меседж
