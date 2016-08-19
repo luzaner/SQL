@@ -1,0 +1,1 @@
+SELECT * FROM name_table1 WHERE message LIKE '%DKL%'; // ВЫБОР всех полей где сообщение содержит в средине DKL 
