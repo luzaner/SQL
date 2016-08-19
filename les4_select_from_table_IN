@@ -1,0 +1,2 @@
+ SELECT * FROM name_table1 WHERE id IN (1,2,3,4) ; выбор с таблицы где ид есть 1, 2, 3, 4
+  SELECT * FROM name_table1 WHERE id NOT  IN (1,2,3,4) ; выбор с таблицы где ид есть НЕ 1, 2, 3, 4
