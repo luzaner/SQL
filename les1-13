@@ -1,0 +1,61 @@
+// CREATION TABLE
+CREATE TABLE name_table1(
+	id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL, 
+	title VARCHAR(133) CHARACTER SET utf8 COLLATE utf8_general_ci, 
+	message TEXT NOT NULL,
+	age INT(11) DEFAULT 0,
+	price DOUBLE
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+TRUNCATE name_table1; // удаление данных таблицы
+DROP TABLE name_table1;// delete table 
+DROP DATABASE name_database; // delete database
+SHOW DATABESES; // ВОЗВРАЩАЕТ СПИСОК баз данных, которые есть
+SHOW TABLES; // ВОЗВРАЩАЕТ СПИСОК баз данных, которые есть
+
+USE lesson;
+SHOW TABLES; // ПОКАЖЕТ таблицы базы данных лесон
+
+
+ALTER TABLE name_table1 ADD subject varchar(67) CHARACTER SET UTF8 COLLATE UTF8_GENERAL_CI AFTER message; 
+// добавили колонку сабджект после колонки меседж
+ALTER TABLE name_table1 DROP COLUMN subject; 
+// удалиил колонку
+
+INSERT INTO name_table1(title, message, name1, age, price) VALUES ('TITLE','NAME', 65, 11, 100); // заполнили поля значениями 
+
+SELECT * FROM name_table1 WHERE message LIKE '%DKL%'; // ВЫБОР всех полей где сообщение содержит в средине DKL 
+
+SELECT * FROM name_table1 WHERE id IN (1,2,3,4) ; выбор с таблицы где ид есть 1, 2, 3, 4
+  SELECT * FROM name_table1 WHERE id NOT  IN (1,2,3,4) ; выбор с таблицы где ид есть НЕ 1, 2, 3, 4
+  
+  
+  
+  SELECT id, message, title, age, price FROM name_table1 ; // выбрать поля... 
+SELECT * FROM name_table1; // выбрать все поля
+SELECT * FROM name_table1 WHERE  (price<50) AND (age >30)  // выбрать все поля где условие.... 
+SELECT * FROM name_table1 WHERE id = 2; // выбрать все поля где условие....
+SELECT name_table1.message AS message2 FROM name_table1; // выбрать поле меседж как меседж2
+
+
+SELECT * FROM name_table1 WHERE message NOT LIKE '%оапрпе' LIMIT 4,7; 
+// вывод всех полей где сообщение не содержит оапрпе от 4 до 7-го значения. 
+SELECT * FROM name_table1 WHERE message LIKE '%DKL%' ORDER BY price ASC; 
+// ВЫВОД НА экран всех полей где меседж содержит ДКЛ отсортирируемые цены в обычном порядке
+SELECT * FROM name_table1 WHERE message LIKE '%DKL%' ORDER BY price DESC LIMIT 1;
+// ВЫВОД всех знаений где меседж содержит ДКЛ отсортированые в обратном порядке, вывод 1го элемента 
+
+SELECT COUNT(DISTINCT price) AS count_price FROM name_table1; 
+// показать коичество уникальныз цен как каунт_прайс
+SELECT AVG( price) AS count_price FROM name_table1;
+// средняя цена 
+SELECT SUM( price) AS count_price FROM name_table1;
+//  сумма
+SELECT MAX( price) AS count_price FROM name_table1;
+// MAXIMAL
+SELECT MIN( price) AS count_price FROM name_table1;
+// MINIMAL
+
+SELECT * FROM name_table1
+GROUP BY title, message HAVING price > 20
+// группируем по тайтл и меседж где цена больше 20
