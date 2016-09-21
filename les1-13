@@ -27,7 +27,7 @@ INSERT INTO name_table1(title, message, name1, age, price) VALUES ('TITLE','NAME
 SELECT * FROM name_table1 WHERE message LIKE '%DKL%'; // ВЫБОР всех полей где сообщение содержит в средине DKL 
 
 SELECT * FROM name_table1 WHERE id IN (1,2,3,4) ; выбор с таблицы где ид есть 1, 2, 3, 4
-  SELECT * FROM name_table1 WHERE id NOT  IN (1,2,3,4) ; выбор с таблицы где ид есть НЕ 1, 2, 3, 4
+  SELECT * FROM name_table1 WHERE id NOT  IN (1,2,3,4) ; выбор с таблицы где ид есть НЕ 1, 2, 3, 
   
   
   
