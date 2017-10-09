@@ -1,1 +1,0 @@
-INSERT INTO name_table1(title, message, name1, age, price) VALUES ('TITLE','NAME', 65, 11, 100); // заполнили поля значениями 
