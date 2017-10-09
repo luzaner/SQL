@@ -1,2 +1,3 @@
 # SQL
-lalala
+Just some SQL scripts 
+crib
