@@ -1,3 +1,2 @@
 # SQL
-Just some SQL scripts 
-crib
+Just some SQL scripts like crib
