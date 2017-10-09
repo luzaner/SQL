@@ -1,6 +1,0 @@
-SELECT * FROM name_table1 WHERE message NOT LIKE '%оапрпе' LIMIT 4,7; 
-// вывод всех полей где сообщение не содержит оапрпе от 4 до 7-го значения. 
-SELECT * FROM name_table1 WHERE message LIKE '%DKL%' ORDER BY price ASC; 
-// ВЫВОД НА экран всех полей где меседж содержит ДКЛ отсортирируемые цены в обычном порядке
-SELECT * FROM name_table1 WHERE message LIKE '%DKL%' ORDER BY price DESC LIMIT 1;
-// ВЫВОД всех знаений где меседж содержит ДКЛ отсортированые в обратном порядке, вывод 1го элемента 
